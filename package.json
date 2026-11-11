@@ -1,0 +1,24 @@
+{
+  "name": "chat-mistral",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Chat mínimo con la API de Mistral (SDK oficial de TypeScript)",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc && node scripts/copy-client.mjs",
+    "start": "node dist/server.js",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@mistralai/mistralai": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

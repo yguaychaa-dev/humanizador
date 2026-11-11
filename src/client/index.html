@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat con Mistral</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="chat">
+    <header>
+      <h1>Chat con Mistral</h1>
+      <p id="status">Comprobando estado…</p>
+    </header>
+    <div id="messages" class="messages" aria-live="polite"></div>
+    <form id="form">
+      <input id="input" type="text" placeholder="Escribe un mensaje…" autocomplete="off" maxlength="4000" required />
+      <button type="submit" id="send">Enviar</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
